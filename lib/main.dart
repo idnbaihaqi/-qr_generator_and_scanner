@@ -3,9 +3,9 @@ import 'package:flutter/foundation.dart'; // untuk kReleaseMode
 import 'package:flutter/material.dart';
 
 import 'ui/splash_screen.dart';
-// import 'ui/home_screen.dart';
-// import 'ui/qr_generator_screen.dart';
-// import 'ui/qr_scanner_screen.dart';
+import 'ui/home_screen.dart';
+import 'ui/qr_generator_screen.dart';
+import 'ui/qr_scanner_screen.dart';
 
 void main() {
   runApp(
@@ -54,9 +54,9 @@ class MainApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashScreen(),
-        // '/home': (context) => const HomeScreen(),
-        // '/create': (context) => const QrGeneratorScreen(),
-        // '/scan': (context) => const QrScannerScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/create': (context) => const QrGeneratorScreen(),
+        '/scan': (context) => const QrScannerScreen(),
       },
     );
   }
